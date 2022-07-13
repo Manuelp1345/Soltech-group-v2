@@ -2,14 +2,34 @@ import React from "react";
 import CustomMenu from "./menu/CustomMenu";
 import { Box } from "@mui/system";
 // @ts-ignore
-const ContainerCustom = ({ children }) => {
+const ContainerCustom = ({ children, bg }) => {
+  let bgUrl = "";
+  if (bg === "home") {
+    bgUrl = "url('img/1 HOME.jpg')";
+  }
+  if (bg === "nosotros") {
+    bgUrl = "url('img/2 NOSOTROS.jpg')";
+  }
+  if (bg === "Servicios") {
+    bgUrl = "url('img/LO QUE HACEMOS FINAL.jpg')";
+  }
+  if (bg === "Recursos") {
+    bgUrl = "url('img/RECURSOS ARREGLADA.jpg')";
+  }
+  if (bg === "Laboratorio") {
+    bgUrl = "url('img/LABORATORIO ARREGLADA.jpg')";
+  }
+  if (bg === "Contacto") {
+    bgUrl = "url('img/CONTACTO ARREGLADA.jpg')";
+  }
+
   return (
     <Box
       sx={{
         width: "100wh",
         height: "calc(100vh + 30rem)",
         position: "relative",
-        backgroundImage: "url('img/1 HOME.jpg')",
+        backgroundImage: bgUrl,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

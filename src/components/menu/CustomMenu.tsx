@@ -12,6 +12,7 @@ const CustomMenu = () => {
         padding: "0.5rem",
         position: "fixed",
         width: "100%",
+        zIndex: "100",
       }}
     >
       <Box
@@ -54,12 +55,14 @@ const CustomMenu = () => {
           marginTop: "0.5rem",
         }}
       >
-        <ButtonMenu>Home</ButtonMenu>
-        <ButtonMenu>Nosotros</ButtonMenu>
-        <ButtonMenu>Lo que hacemos</ButtonMenu>
-        <ButtonMenu>Recursos</ButtonMenu>
-        <ButtonMenu>Laboratorios</ButtonMenu>
-        <ButtonMenu lastBtn>Contacto</ButtonMenu>
+        <ButtonMenu to="/">Home</ButtonMenu>
+        <ButtonMenu to="/nosotros">Nosotros</ButtonMenu>
+        <ButtonMenu to="/lo-que-hacemos">Lo que hacemos</ButtonMenu>
+        <ButtonMenu to="/recursos">Recursos</ButtonMenu>
+        <ButtonMenu to="/lab">Laboratorios</ButtonMenu>
+        <ButtonMenu to="/contacto" lastBtn>
+          Contacto
+        </ButtonMenu>
       </Box>
     </Box>
   );

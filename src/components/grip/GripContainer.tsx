@@ -24,9 +24,10 @@ const GripContainer = ({
             ? "linear-gradient(0deg, rgba(23,32,44,1) 3%, rgba(23,32,44,0.4) 100%)"
             : "rgb(23, 32, 44)",
           display: "grid",
-          gridTemplateColumns: "2fr 1.5fr 2fr 2fr 2fr 2fr",
+          gridTemplateColumns: "1.5fr 2fr 2fr 2fr 2fr 2fr ",
           borderBottom: "1px solid #2f3742",
           height: space,
+          position: "relative",
         }}
       >
         {children}
