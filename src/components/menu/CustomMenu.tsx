@@ -12,7 +12,7 @@ const CustomMenu = () => {
         padding: "0.5rem",
         position: "fixed",
         width: "100%",
-        zIndex: "100",
+        zIndex: "999",
       }}
     >
       <Box
@@ -57,6 +57,7 @@ const CustomMenu = () => {
       >
         <ButtonMenu to="/">Home</ButtonMenu>
         <ButtonMenu to="/nosotros">Nosotros</ButtonMenu>
+        <ButtonMenu to="/vision">Vision</ButtonMenu>
         <ButtonMenu to="/lo-que-hacemos">Lo que hacemos</ButtonMenu>
         <ButtonMenu to="/recursos">Recursos</ButtonMenu>
         <ButtonMenu to="/lab">Laboratorios</ButtonMenu>

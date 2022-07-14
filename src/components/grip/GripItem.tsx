@@ -8,15 +8,14 @@ const GripItem = ({
   children?: any;
   isLast?: boolean;
 }) => {
-  const margin = !isLast ? "#2f3742 solid 1px" : "none";
   return (
     <Box
       sx={{
-        borderRight: margin,
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        width: "300px",
       }}
     >
       {children}

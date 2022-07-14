@@ -12,20 +12,14 @@ const GripContainer = ({
 }) => {
   const space = spaceMid ? "100px" : "0";
   return (
-    <Box
-      component="section"
-      sx={{
-        marginTop: isFirts ? "-10rem" : "0",
-      }}
-    >
+    <Box component="section">
       <Box
         sx={{
-          background: isFirts
-            ? "linear-gradient(0deg, rgba(23,32,44,1) 3%, rgba(23,32,44,0.4) 100%)"
-            : "rgb(23, 32, 44)",
-          display: "grid",
-          gridTemplateColumns: "1.5fr 2fr 2fr 2fr 2fr 2fr ",
-          borderBottom: "1px solid #2f3742",
+          margin: "0 auto",
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          alignItems: "center",
           height: space,
           position: "relative",
         }}

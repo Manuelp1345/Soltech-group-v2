@@ -32,6 +32,7 @@ const ContainerCustom = ({ children, bg }) => {
         backgroundImage: bgUrl,
         backgroundSize: "cover",
         backgroundPosition: "center",
+        zIndex: "999",
       }}
     >
       <Box
