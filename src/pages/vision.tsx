@@ -1,23 +1,11 @@
 import React from "react";
 import GripContainer from "../components/grip/GripContainer";
 import GripItem from "../components/grip/GripItem";
-import { Button, Typography, Modal } from "@mui/material";
+import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import ContainerCustom from "../components/ContainerCustom";
-import Header from "../components/Header";
 
 const Vision = () => {
-  const [open, setOpen] = React.useState(false);
-  const handleClose = () => {
-    setOpen(false);
-  };
-  const [text, setText] = React.useState({
-    nombre: "",
-    puesto: "",
-    descripcion: "",
-  });
-  const [imgUrl, setImgUrl] = React.useState("");
-
   return (
     <ContainerCustom bg="nosotros">
       <Box

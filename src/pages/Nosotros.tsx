@@ -4,7 +4,6 @@ import GripItem from "../components/grip/GripItem";
 import { Button, Typography, Modal } from "@mui/material";
 import { Box } from "@mui/system";
 import ContainerCustom from "../components/ContainerCustom";
-import Header from "../components/Header";
 
 const style = {
   position: "absolute" as "absolute",
