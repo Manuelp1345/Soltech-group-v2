@@ -436,7 +436,7 @@ const Nosotros = () => {
               setImgUrl("img/m6.png");
               setText({
                 nombre: "Jorge Diaz",
-                puesto: "Director Public Relations",
+                puesto: "Corporative Advisor",
                 descripcion:
                   "Jorge Diaz estudio desarrollo empresarial e Ingeniería Industrial. Luego de su preparación académica, Jorge inicia su carrera profesional, en una importante empresa de muebles de lujo, para una clientela selecta y de gustos muy particulares; para lo cual Jorge con su experticia en diseños de software, manejaba los programas para estos diseños y satisfacer un mercado muy demandante. Seguido, Jorge se une al equipo de diseño del sistema de transporte articulado central de Bogotá, capital de Colombia - Transmilenio. Siendo este el proyecto de transporte más ambicioso del país. Igualmente, el más avanzando con mayor cantidad de usuarios y complejo del país; para lo cual Jorge con su experticia logra desarrollar una de las rutas de acceso y de pasajeros más importante de la ciudad – La ruta de las Américas. Después, inicia su carrera como empresario en el sector de los hidro-carburos como contratista en el manejo de software para el desarrollo de estudios adjuntos a exploraciones sísmicas de petroleras tanto nacionales como Internacionales. Conjuntamente con el desarrollo de software para gestión de sistemas de riesgo para Multinacionales. Actualmente y dada a su importante trayectoria, lo lleva a enfocarse en el software estadístico para desarrollar aplicaciones de apuestas deportivas, gaming y desarrollo de apps; para importantes firmas en LATAM. Seguido de esto, Jorge se especializa en este sector creando su propia empresa de redes transaccionales y desarrollo de software, utilizando el block-chain y desarrollo de aplicaciones por pedidos especiales para clientes tanto en el sector Público como Privado en LATAM y Europa.",
               });
@@ -466,7 +466,7 @@ const Nosotros = () => {
             <Typography
               sx={{ color: "white", fontWeight: "bold", textAlign: "center" }}
             >
-              Director Public Relations
+              Corporative Advisor
             </Typography>
           </Button>
         </GripItem>

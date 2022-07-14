@@ -5,3 +5,26 @@
 html {
   background-color: rgb(23, 32, 44);
 }
+.card {
+  transition: all 0.5s ease-in-out !important;
+}
+
+.textHover span:nth-child(2) {
+  opacity: 0;
+}
+.card:hover .textHover span:first-child {
+  display: none;
+}
+.card:hover .textHover {
+  white-space: normal;
+}
+.card:hover {
+  background-color: rgba(13, 19, 26, 0.658);
+  transition: all 0.5s ease-in-out;
+  height: 350px;
+  transform: scale(1.05);
+}
+.card:hover .textHover span:nth-child(2) {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
