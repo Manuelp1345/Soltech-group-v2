@@ -44,6 +44,7 @@ const ButtonMenu = ({
           }}
         >
           {children}
+          {isExpanded ? open ? <ExpandLess /> : <ExpandMore /> : null}
         </Button>
       </Link>
       <Collapse
