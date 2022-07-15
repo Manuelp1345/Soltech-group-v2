@@ -56,7 +56,9 @@ const CustomMenu = () => {
         }}
       >
         <ButtonMenu to="/">Home</ButtonMenu>
-        <ButtonMenu to="/nosotros">Nosotros</ButtonMenu>
+        <ButtonMenu isExpanded to="/nosotros">
+          Nosotros
+        </ButtonMenu>
         <ButtonMenu to="/vision">Vision</ButtonMenu>
         <ButtonMenu to="/lo-que-hacemos">Lo que hacemos</ButtonMenu>
         <ButtonMenu to="/recursos">Recursos</ButtonMenu>
