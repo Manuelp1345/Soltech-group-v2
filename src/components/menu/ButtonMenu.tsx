@@ -57,16 +57,16 @@ const ButtonMenu = ({
         unmountOnExit
       >
         <List component="div" disablePadding>
-          <ListItemButton sx={{ pl: 3, fontSize: "1rem" }}>
-            <Link style={{ textDecoration: "none" }} to="/vision">
+          <Link style={{ textDecoration: "none" }} to="/vision">
+            <ListItemButton sx={{ pl: 3, fontSize: "1rem" }}>
               <ListItemText sx={{ color: "white" }} primary="Visión" />
-            </Link>
-          </ListItemButton>
-          <ListItemButton sx={{ pl: 3, fontSize: "1rem" }}>
-            <Link style={{ textDecoration: "none" }} to="/nosotros">
-              <ListItemText sx={{ color: "white" }} primary="team" />
-            </Link>
-          </ListItemButton>
+            </ListItemButton>
+          </Link>
+          <Link style={{ textDecoration: "none" }} to="/nosotros">
+            <ListItemButton sx={{ pl: 3, fontSize: "1rem" }}>
+              <ListItemText sx={{ color: "white" }} primary="Team" />
+            </ListItemButton>
+          </Link>
         </List>
       </Collapse>
     </Box>
