@@ -1,6 +1,5 @@
 import React from "react";
-import GripContainer from "../components/grip/GripContainer";
-import GripItem from "../components/grip/GripItem";
+
 import ContainerCustom from "../components/ContainerCustom";
 import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
