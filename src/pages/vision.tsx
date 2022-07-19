@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
-import GripContainer from "../components/grip/GripContainer";
-import GripItem from "../components/grip/GripItem";
+
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import ContainerCustom from "../components/ContainerCustom";
