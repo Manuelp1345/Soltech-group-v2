@@ -3,11 +3,18 @@ import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
 import { Field, Form, Formik } from "formik";
 import { Language } from "../../App";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 
 const CustomMenu = () => {
   //@ts-ignore
   const { setLanguage, language } = useContext(Language);
+
+  useEffect(() => {
+    if (localStorage.getItem("language")) {
+      setLanguage(localStorage.getItem("language"));
+    }
+  }, [setLanguage, language]);
+
   return (
     <Box
       sx={{
@@ -52,12 +59,14 @@ const CustomMenu = () => {
           {({ setFieldValue }) => (
             <Form>
               <Field
+                value={language}
                 name="language"
                 as="select"
                 //@ts-ignore
                 onChange={(event) => {
                   setLanguage(event.target.value);
                   setFieldValue("language", event.target.value);
+                  localStorage.setItem("language", event.target.value);
                 }}
               >
                 <option value="english">

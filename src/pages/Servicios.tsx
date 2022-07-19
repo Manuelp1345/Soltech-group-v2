@@ -176,7 +176,7 @@ const Servicios = () => {
             <Typography
               sx={{ color: "white", fontWeight: "bold", marginLeft: 2 }}
             >
-              Servicios
+              {language === "english" ? "Services" : "Servicios"}
             </Typography>
           </GripItem>
           <GripItem>
