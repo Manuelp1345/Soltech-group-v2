@@ -62,7 +62,7 @@ const Nosotros = () => {
           <GripItem>
             <Button
               onClick={() => {
-                setOpen(true);
+                //setOpen(true);
                 setImgUrl("img/m7.png");
                 setText({
                   nombre: "Jorge  Martin",
@@ -100,7 +100,7 @@ const Nosotros = () => {
           <GripItem>
             <Button
               onClick={() => {
-                setOpen(true);
+                //setOpen(true);
                 setImgUrl("img/m9.png");
                 setText({
                   nombre: "Edgar Alexander Rosales",
@@ -140,7 +140,7 @@ const Nosotros = () => {
           <GripItem>
             <Button
               onClick={() => {
-                setOpen(true);
+                //setOpen(true);
                 setImgUrl("img/m4.png");
                 setText({
                   nombre: "Eli Godoy",
@@ -178,7 +178,7 @@ const Nosotros = () => {
           <GripItem>
             <Button
               onClick={() => {
-                setOpen(true);
+                //setOpen(true);
                 setImgUrl("img/m3.png");
                 setText({
                   nombre: "Ernesto Vergara",
@@ -220,7 +220,7 @@ const Nosotros = () => {
           <GripItem>
             <Button
               onClick={() => {
-                setOpen(true);
+                //setOpen(true);
                 setImgUrl("img/m2.png");
                 setText({
                   nombre: "Eder Martello Mayorga",
@@ -263,7 +263,7 @@ const Nosotros = () => {
           <GripItem>
             <Button
               onClick={() => {
-                setOpen(true);
+                //setOpen(true);
                 setImgUrl("img/m1.png");
                 setText({
                   nombre: "Alexander Vanegas",
@@ -301,7 +301,7 @@ const Nosotros = () => {
           <GripItem>
             <Button
               onClick={() => {
-                setOpen(true);
+                //setOpen(true);
                 setImgUrl("img/m8.png");
                 setText({
                   nombre: "Viviana Arango",
@@ -339,7 +339,7 @@ const Nosotros = () => {
           <GripItem>
             <Button
               onClick={() => {
-                setOpen(true);
+                //setOpen(true);
                 setImgUrl("img/m10.png");
                 setText({
                   nombre: "Ivihan Ixela Pereira Morett",
@@ -389,7 +389,7 @@ const Nosotros = () => {
           <GripItem>
             <Button
               onClick={() => {
-                setOpen(true);
+                //setOpen(true);
                 setImgUrl("img/m6.png");
                 setText({
                   nombre: "Jorge Diaz",
@@ -430,7 +430,7 @@ const Nosotros = () => {
           <GripItem>
             <Button
               onClick={() => {
-                setOpen(true);
+                //setOpen(true);
                 setImgUrl("img/m5.png");
                 setText({
                   nombre: "Benmar Salas Rivero",
@@ -470,7 +470,7 @@ const Nosotros = () => {
           <GripItem>
             <Button
               onClick={() => {
-                setOpen(true);
+                //setOpen(true);
                 setImgUrl("img/m11.png");
                 setText({
                   nombre: "Manuel Puente",

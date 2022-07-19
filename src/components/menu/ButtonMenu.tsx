@@ -9,6 +9,8 @@ import {
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import { ExpandLess, ExpandMore } from "@mui/icons-material";
+import { useContext } from "react";
+import { Language } from "../../App";
 
 const ButtonMenu = ({
   children,
@@ -22,6 +24,8 @@ const ButtonMenu = ({
   isExpanded?: boolean;
 }) => {
   const [open, setOpen] = React.useState(false);
+  // @ts-ignore
+  const { language } = useContext(Language);
 
   const handleClick = () => {
     setOpen(!open);
@@ -58,12 +62,15 @@ const ButtonMenu = ({
       >
         <List component="div" disablePadding>
           <Link style={{ textDecoration: "none" }} to="/vision">
-            <ListItemButton sx={{ pl: 3, fontSize: "1rem" }}>
-              <ListItemText sx={{ color: "white" }} primary="Visión" />
+            <ListItemButton sx={{ px: 4, fontSize: "1rem" }}>
+              <ListItemText
+                sx={{ color: "white" }}
+                primary={language === "english" ? "Vision" : "Visión"}
+              />
             </ListItemButton>
           </Link>
           <Link style={{ textDecoration: "none" }} to="/nosotros">
-            <ListItemButton sx={{ pl: 3, fontSize: "1rem" }}>
+            <ListItemButton sx={{ px: 4, fontSize: "1rem" }}>
               <ListItemText sx={{ color: "white" }} primary="Team" />
             </ListItemButton>
           </Link>

@@ -1,8 +1,13 @@
 import ButtonMenu from "./ButtonMenu";
 import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
+import { Field, Form, Formik } from "formik";
+import { Language } from "../../App";
+import { useContext } from "react";
 
 const CustomMenu = () => {
+  //@ts-ignore
+  const { setLanguage, language } = useContext(Language);
   return (
     <Box
       sx={{
@@ -43,6 +48,28 @@ const CustomMenu = () => {
         >
           Soltech Group
         </Typography>
+        <Formik initialValues={{ language: "" }} onSubmit={() => {}}>
+          {({ setFieldValue }) => (
+            <Form>
+              <Field
+                name="language"
+                as="select"
+                //@ts-ignore
+                onChange={(event) => {
+                  setLanguage(event.target.value);
+                  setFieldValue("language", event.target.value);
+                }}
+              >
+                <option value="english">
+                  {language === "english" ? "English" : "Ingles"}
+                </option>
+                <option value="spanish">
+                  {language === "english" ? "Spanish" : "Español"}
+                </option>
+              </Field>
+            </Form>
+          )}
+        </Formik>
       </Box>
       <Box
         component="ul"
@@ -57,13 +84,17 @@ const CustomMenu = () => {
       >
         <ButtonMenu to="/">Home</ButtonMenu>
         <ButtonMenu isExpanded to="/nosotros">
-          Nosotros
+          {language === "english" ? "About US" : "Nosotros"}
         </ButtonMenu>
-        <ButtonMenu to="/lo-que-hacemos">Lo que hacemos</ButtonMenu>
-        <ButtonMenu to="/recursos">Recursos</ButtonMenu>
-        <ButtonMenu to="/lab">Laboratorios</ButtonMenu>
+        <ButtonMenu to="/lo-que-hacemos">
+          {language === "english" ? "What We Do" : " Lo que hacemos"}
+        </ButtonMenu>
+        {/*         <ButtonMenu to="/recursos">Recursos</ButtonMenu> */}
+        <ButtonMenu to="/lab">
+          {language === "english" ? "Soltech Labs" : "Laboratorios Soltech"}
+        </ButtonMenu>
         <ButtonMenu to="/contacto" lastBtn>
-          Contacto
+          {language === "english" ? "Contact" : "Contacto"}
         </ButtonMenu>
       </Box>
     </Box>

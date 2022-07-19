@@ -5,8 +5,157 @@ import { Box } from "@mui/system";
 import ContainerCustom from "../components/ContainerCustom";
 import Header from "../components/Header";
 import "animate.css";
+import { useContext } from "react";
+import { Language } from "../App";
+
+const tenologiaBlock = (
+  <>
+    Desarrollamos Criptomonedas
+    <span style={{ fontSize: 5, fontWeight: "bold" }}>...</span>
+    <span>, Token y NFT compatibles con múltiples Exchange</span>
+  </>
+);
+
+const tecnologiaBlock = (
+  <>
+    We develop Cryptocurrencies
+    <span style={{ fontSize: 5, fontWeight: "bold" }}>...</span>
+    <span>, Tokens and NFTs compatible with multiple Exchanges.</span>
+  </>
+);
+
+const itInfrastruc = (
+  <>
+    We design and supply
+    <span>...</span>
+    <span>
+      &nbsp;the IT infrastructure that adapts correctly to the needs of your
+      company, with high scalability over time.
+    </span>
+  </>
+);
+
+const itInfrastruc2 = (
+  <>
+    Diseñamos y Suministramos
+    <span>...</span>
+    <span>
+      &nbsp;la Infraestructura de TI que se adapte de forma correcta a las
+      necesidades de tu empresa, con una alta escalabilidad en el Tiempo.
+    </span>
+  </>
+);
+
+const digital = (
+  <>
+    Intervention to stimulate
+    <span>...</span>
+    <span>
+      &nbsp;the acceleration of the digital transformation of companies.
+    </span>
+  </>
+);
+const digital2 = (
+  <>
+    Intervención para estimular
+    <span>...</span>
+    <span>
+      &nbsp;la aceleración de la transformación digital de las empresas.
+    </span>
+  </>
+);
+
+const seguridad = (
+  <>
+    We protect the Integrity
+    <span>...</span>
+    <span>&nbsp;and Privacy of your Company’s Data.</span>
+  </>
+);
+const seguridad2 = (
+  <>
+    Protegemos la Integridad
+    <span>...</span>
+    <span>&nbsp;y Privacidad de la Data de tu Empresa.</span>
+  </>
+);
+
+const consultoria = (
+  <>
+    We advise you on how
+    <span>...</span>
+    <span>
+      &nbsp;to achieve an ICT strategy adapted to your needs and focused on
+      results for your company.
+    </span>
+  </>
+);
+const consultoria2 = (
+  <>
+    Te asesoramos sobre
+    <span>...</span>
+    <span>
+      &nbsp;cómo conseguir una estrategia TIC adaptada a tus necesidades y
+      enfocada a resultados para tu empresa.
+    </span>
+  </>
+);
+
+const cloud = (
+  <>
+    Cloud Computing Platform Rental
+    <span>...</span>
+    <span>&nbsp;for Data Processing</span>
+  </>
+);
+const cloud2 = (
+  <>
+    Alquiler de plataforma
+    <span>...</span>
+    <span>&nbsp;de Computo en la Nube para el procesamiento de Datos</span>
+  </>
+);
+
+const migracion = (
+  <>
+    We transfer the data
+    <span>...</span>
+    <span>
+      &nbsp;of your company from one platform to another (from one system to
+      another), with the Scrapy use of Data from Any Platform (Data Mining).
+    </span>
+  </>
+);
+const migracion2 = (
+  <>
+    Trasladamos la Data
+    <span>...</span>
+    <span>
+      &nbsp;de tu empresa de una plataforma a otra (de un Sistema a Otro), con
+      el uso de Scrapy de Datos de Cualquier Plataforma (Minería de Datos).
+    </span>
+  </>
+);
+
+const app = (
+  <>
+    We create Applications
+    <span>...</span>
+    <span>&nbsp;for all types of digital electronic devices.</span>
+  </>
+);
+const app2 = (
+  <>
+    Creamos Aplicaciones
+    <span>...</span>
+    <span>&nbsp;para todo tipo de dispositivos electrónicos digitales</span>
+  </>
+);
 
 const Servicios = () => {
+  // @ts-ignore
+  const { language } = useContext(Language);
+
   return (
     <ContainerCustom bg="Servicios">
       <Header />
@@ -46,14 +195,14 @@ const Servicios = () => {
                 src="img/blockchain.svg"
               />
               <Typography textAlign="center" variant="h5" component="div">
-                Tecnologías BlockChain
+                {language === "english"
+                  ? "Blockchain technologies"
+                  : "Tecnologías BlockChain"}
                 <br />
                 <br />
               </Typography>
               <Typography className="textHover" variant="body2">
-                Desarrollamos Criptomonedas
-                <span style={{ fontSize: 5, fontWeight: "bold" }}>...</span>
-                <span>, Token y NFT compatibles con múltiples Exchange</span>
+                {language === "english" ? tecnologiaBlock : tenologiaBlock}
               </Typography>
             </CardContent>
           </Card>
@@ -82,7 +231,15 @@ const Servicios = () => {
                 src="img/infraestrucutra-ti.svg"
               />
               <Typography textAlign="center" variant="h5" component="div">
-                Infraestructura de TI
+                {language === "english" ? (
+                  <>
+                    IT infrastructure
+                    <br />
+                  </>
+                ) : (
+                  "Infraestructura de TI"
+                )}
+
                 <br />
                 <br />
               </Typography>
@@ -96,13 +253,7 @@ const Servicios = () => {
                 }}
                 variant="body2"
               >
-                Diseñamos y Suministramos
-                <span>...</span>
-                <span>
-                  &nbsp;la Infraestructura de TI que se adapte de forma correcta
-                  a las necesidades de tu empresa, con una alta escalabilidad en
-                  el Tiempo.
-                </span>
+                {language === "english" ? itInfrastruc : itInfrastruc2}
               </Typography>
             </CardContent>
           </Card>
@@ -131,17 +282,17 @@ const Servicios = () => {
                 src="img/transformacion-digital.svg"
               />
               <Typography textAlign="center" variant="h5" component="div">
-                Transformación Digital
+                {language === "english" ? (
+                  <>Digital Transformation</>
+                ) : (
+                  <>Transformación Digital</>
+                )}
+
                 <br />
                 <br />
               </Typography>
               <Typography className="textHover" variant="body2">
-                Intervención para estimular
-                <span>...</span>
-                <span>
-                  &nbsp;la aceleración de la transformación digital de las
-                  empresas.
-                </span>
+                {language === "english" ? digital : digital2}
               </Typography>
             </CardContent>
           </Card>
@@ -184,14 +335,13 @@ const Servicios = () => {
                 src="img/seguridad.svg"
               />
               <Typography textAlign="center" variant="h5" component="div">
-                Seguridad
+                {language === "english" ? <>Security</> : <>Seguridad</>}
+
                 <br />
                 <br />
               </Typography>
               <Typography className="textHover" variant="body2">
-                Protegemos la Integridad
-                <span>...</span>
-                <span>&nbsp;y Privacidad de la Data de tu Empresa.</span>
+                {language === "english" ? seguridad : seguridad2}
               </Typography>
             </CardContent>
           </Card>
@@ -220,17 +370,12 @@ const Servicios = () => {
                 src="img/consultoria.svg"
               />
               <Typography textAlign="center" variant="h5" component="div">
-                Consultoría
+                {language === "english" ? <>Consultancy</> : <>Consultoría</>}
                 <br />
                 <br />
               </Typography>
               <Typography className="textHover" variant="body2">
-                Te asesoramos sobre
-                <span>...</span>
-                <span>
-                  &nbsp;cómo conseguir una estrategia TIC adaptada a tus
-                  necesidades y enfocada a resultados para tu empresa.
-                </span>
+                {language === "english" ? consultoria : consultoria2}
               </Typography>
             </CardContent>
           </Card>
@@ -259,14 +404,14 @@ const Servicios = () => {
                 src="img/cloud.svg"
               />
               <Typography textAlign="center" variant="h5" component="div">
-                Cloud Computing Services
+                {language === "english" ? (
+                  <>Cloud Computing Services</>
+                ) : (
+                  <>Cloud Computing Services</>
+                )}
               </Typography>
               <Typography className="textHover" variant="body2">
-                Alquiler de plataforma
-                <span>...</span>
-                <span>
-                  &nbsp;de Computo en la Nube para el procesamiento de Datos
-                </span>
+                {language === "english" ? cloud : cloud2}
               </Typography>
             </CardContent>
           </Card>
@@ -310,16 +455,18 @@ const Servicios = () => {
                 src="img/migracion.svg"
               />
               <Typography textAlign="center" variant="h5" component="div">
-                Migraciones de Datos
+                {language === "english" ? (
+                  <>
+                    Data Migrations
+                    <br />
+                    <br />
+                  </>
+                ) : (
+                  <>Migraciones de Datos</>
+                )}
               </Typography>
               <Typography className="textHover" variant="body2">
-                Trasladamos la Data
-                <span>...</span>
-                <span>
-                  &nbsp;de tu empresa de una plataforma a otra (de un Sistema a
-                  Otro), con el uso de Scrapy de Datos de Cualquier Plataforma
-                  (Minería de Datos).
-                </span>
+                {language === "english" ? migracion : migracion2}
               </Typography>
             </CardContent>
           </Card>
@@ -348,14 +495,14 @@ const Servicios = () => {
                 src="img/tablet-y-movil.svg"
               />
               <Typography textAlign="center" variant="h5" component="div">
-                Desarrollo de aplicaciones
+                {language === "english" ? (
+                  <>Application Development </>
+                ) : (
+                  <>Desarrollo de aplicaciones</>
+                )}
               </Typography>
               <Typography className="textHover" variant="body2">
-                Creamos Aplicaciones
-                <span>...</span>
-                <span>
-                  &nbsp;para todo tipo de dispositivos electrónicos digitales
-                </span>
+                {language === "english" ? app : app2}
               </Typography>
             </CardContent>
           </Card>

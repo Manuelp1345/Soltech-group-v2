@@ -1,8 +1,13 @@
 import React from "react";
 import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
+import { useContext } from "react";
+import { Language } from "../App";
 
 const Header = () => {
+  //@ts-ignore
+  const { language } = useContext(Language);
+
   return (
     <Box
       component="section"
@@ -23,11 +28,9 @@ const Header = () => {
           fontWeight: "bold",
         }}
       >
-        Ideas Creativas e Innovadoras
-      </Typography>
-      <Typography sx={{ textAlign: "right", fontSize: "1.5rem" }}>
-        "Ninguno de nosotros es tan bueno como todos nosotros juntos."
-        <Box>RAY KROC</Box>
+        {language === "english"
+          ? "We put blockchange technology to reach your hands"
+          : "Te ponemos la Tecnologia Blockchange al alcance de tus manos"}
       </Typography>
     </Box>
   );
