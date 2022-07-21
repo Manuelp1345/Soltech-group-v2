@@ -41,14 +41,23 @@ const Contacto = () => {
           <Typography
             sx={{
               color: "white",
+              fontWeight: "bold",
+              marginLeft: 2,
+              marginBottom: "1rem",
+              fontSize: "2rem",
+            }}
+          >
+            {language === "english" ? "England" : "Inglaterra"}
+          </Typography>
+          <Typography
+            sx={{
+              color: "white",
               marginLeft: 2,
               width: "100%",
               marginBottom: "1.5rem",
             }}
           >
-            <span style={{ fontWeight: "bold" }}>
-              Mayfair Berkeley Square&nbsp;
-            </span>
+            <span style={{}}>Mayfair Berkeley Square&nbsp;</span>
             Berkeley Square Berkeley Square House, 2nd Floor Berkeley Square,
             London, W1J6BD, GBR
           </Typography>
@@ -60,7 +69,49 @@ const Contacto = () => {
               marginBottom: "1.5rem",
             }}
           >
-            <span style={{ fontWeight: "bold" }}>Colombia&nbsp;</span>
+            <span style={{ fontWeight: "bold" }}>
+              {language === "english" ? (
+                <>Phone:&nbsp;</>
+              ) : (
+                <>Telefono:&nbsp;</>
+              )}
+            </span>
+            +44 7939 980432
+          </Typography>
+          <Typography
+            sx={{
+              color: "white",
+              marginLeft: 2,
+              width: "100%",
+              marginBottom: "1.5rem",
+            }}
+          >
+            <span style={{ fontWeight: "bold" }}>
+              {language === "english" ? <>Email:&nbsp;</> : <>Correo:&nbsp;</>}
+            </span>
+            admin@soltechgr.com
+          </Typography>
+          <Typography
+            sx={{
+              color: "white",
+              fontWeight: "bold",
+              marginLeft: 2,
+              marginBottom: "1rem",
+              fontSize: "2rem",
+            }}
+          >
+            {language === "english"
+              ? "Colombia ( development Center )"
+              : "Colombia ( centro de desarrollo )"}
+          </Typography>
+          <Typography
+            sx={{
+              color: "white",
+              marginLeft: 2,
+              width: "100%",
+              marginBottom: "1.5rem",
+            }}
+          >
             Carrera 40 5A 271 Sur Torre 2-204 Canaguay/Amarilo Villavicencio,
             Meta, Colombia
           </Typography>
@@ -79,7 +130,7 @@ const Contacto = () => {
                 <>Telefono:&nbsp;</>
               )}
             </span>
-            +44 7939 980432 (UK) &nbsp;/&nbsp; +57 320-8223709 (Colombia)
+            +57 320 3674089
           </Typography>
           <Typography
             sx={{
@@ -92,7 +143,7 @@ const Contacto = () => {
             <span style={{ fontWeight: "bold" }}>
               {language === "english" ? <>Email:&nbsp;</> : <>Correo:&nbsp;</>}
             </span>
-            admin@soltechgr.com &nbsp;/&nbsp; admin@soltechgroup.net
+            admin@soltechgroup.net
           </Typography>
         </Box>
       </Box>

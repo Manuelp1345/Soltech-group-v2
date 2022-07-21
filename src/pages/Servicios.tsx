@@ -165,6 +165,16 @@ const Servicios = () => {
           height: "100%",
         }}
       >
+        <Typography
+          sx={{
+            color: "white",
+            fontWeight: "bold",
+            marginLeft: 30,
+            fontSize: "2rem",
+          }}
+        >
+          {language === "english" ? "Services" : "Servicios"}
+        </Typography>
         <GripContainer isFirts>
           <GripItem>
             {" "}
@@ -172,13 +182,7 @@ const Servicios = () => {
               sx={{ height: "40%", borderBottom: "#2f3742 solid 1px" }}
             ></Box>
           </GripItem>
-          <GripItem>
-            <Typography
-              sx={{ color: "white", fontWeight: "bold", marginLeft: 2 }}
-            >
-              {language === "english" ? "Services" : "Servicios"}
-            </Typography>
-          </GripItem>
+          <GripItem></GripItem>
           <GripItem>
             <Card
               className="card"
