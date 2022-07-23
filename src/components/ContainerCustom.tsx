@@ -26,8 +26,8 @@ const ContainerCustom = ({ children, bg }) => {
   return (
     <Box
       sx={{
-        width: "100wh",
-        height: "calc(100vh + 30rem)",
+        width: { xs: "100%", md: "100wh" },
+        height: { xs: "100%", md: "calc(100vh + 30rem)" },
         position: "relative",
         backgroundImage: bgUrl,
         backgroundSize: "cover",

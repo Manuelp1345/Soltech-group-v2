@@ -20,6 +20,7 @@ const CustomMenu = () => {
       sx={{
         display: "flex",
         justifyContent: "space-between",
+        flexDirection: { xs: "column", md: "row" },
         backgroundColor: "rgba(0,0,0,0.5)",
         padding: "0.5rem",
         position: "fixed",
@@ -30,7 +31,7 @@ const CustomMenu = () => {
       <Box
         sx={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection: { xs: "column", md: "row" },
           justifyContent: "center",
           alignItems: "center",
         }}
@@ -39,6 +40,7 @@ const CustomMenu = () => {
           component="img"
           src="IMG/logo sin letras.png"
           sx={{
+            display: { xs: "none", md: "block", lg: "block" },
             width: "4rem",
             marginLeft: "1rem",
           }}
@@ -84,7 +86,7 @@ const CustomMenu = () => {
         component="ul"
         sx={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection: { xs: "column", md: "row" },
           justifyContent: "center",
           alignItems: "center",
           gap: "1rem",
