@@ -1,5 +1,3 @@
-import GripContainer from "../components/grip/GripContainer";
-import GripItem from "../components/grip/GripItem";
 import { Typography, CardContent, Card } from "@mui/material";
 import { Box } from "@mui/system";
 import ContainerCustom from "../components/ContainerCustom";
@@ -159,398 +157,358 @@ const Servicios = () => {
     <ContainerCustom bg="Servicios">
       <Box
         sx={{
-          paddingTop: "10rem",
+          paddingTop: { xs: "10rem", md: "0rem" },
+
           background:
             "linear-gradient(0deg, rgba(23,32,44,1) 3%, rgba(23,32,44,0.5) 100%)",
           height: "100%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: { xs: "center", md: "center" },
+          alignItems: { xs: "center", md: "center" },
         }}
       >
         <Typography
           sx={{
             color: "white",
             fontWeight: "bold",
-            marginLeft: 30,
             fontSize: "2rem",
           }}
         >
           {language === "english" ? "Services" : "Servicios"}
         </Typography>
-        <GripContainer isFirts>
-          <GripItem>
-            {" "}
-            <Box
-              sx={{ height: "40%", borderBottom: "#2f3742 solid 1px" }}
-            ></Box>
-          </GripItem>
-          <GripItem></GripItem>
-          <GripItem>
-            <Card
-              className="card"
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", md: "row" },
+            justifyContent: { xs: "center", md: "center" },
+            alignItems: { xs: "center", md: "center" },
+          }}
+        >
+          <Card
+            className="card"
+            sx={{
+              width: "250px",
+              minHeight: "150px",
+              height: "250px",
+              backgroundColor: "rgba(0,0,0,0.1)",
+              color: "white",
+            }}
+          >
+            <CardContent
               sx={{
-                minHeight: "150px",
-                height: "250px",
-                backgroundColor: "rgba(0,0,0,0.1)",
-                color: "white",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
               }}
             >
-              <CardContent
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  flexDirection: "column",
-                }}
-              >
-                <Box
-                  sx={{ color: "white", width: "35%", marginTop: "1rem" }}
-                  component="img"
-                  src="img/blockchain.svg"
-                />
-                <Typography textAlign="center" variant="h5" component="div">
-                  {language === "english"
-                    ? "Blockchain technologies"
-                    : "Tecnologías BlockChain"}
-                  <br />
-                  <br />
-                </Typography>
-                <Typography className="textHover" variant="body2">
-                  {language === "english" ? tecnologiaBlock : tenologiaBlock}
-                </Typography>
-              </CardContent>
-            </Card>
-          </GripItem>
-          <GripItem>
-            <Card
-              className="card"
-              sx={{
-                minHeight: "150px",
-                height: "250px",
-                backgroundColor: "rgba(0,0,0,0.1)",
-                color: "white",
-              }}
-            >
-              <CardContent
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  flexDirection: "column",
-                }}
-              >
-                <Box
-                  sx={{ color: "white", width: "35%", marginTop: "1rem" }}
-                  component="img"
-                  src="img/infraestrucutra-ti.svg"
-                />
-                <Typography textAlign="center" variant="h5" component="div">
-                  {language === "english" ? (
-                    <>
-                      IT infrastructure
-                      <br />
-                    </>
-                  ) : (
-                    "Infraestructura de TI"
-                  )}
+              <Box
+                sx={{ color: "white", width: "35%", marginTop: "1rem" }}
+                component="img"
+                src="img/blockchain.svg"
+              />
+              <Typography textAlign="center" variant="h5" component="div">
+                {language === "english"
+                  ? "Blockchain technologies"
+                  : "Tecnologías BlockChain"}
+                <br />
+                <br />
+              </Typography>
+              <Typography className="textHover" variant="body2">
+                {language === "english" ? tecnologiaBlock : tenologiaBlock}
+              </Typography>
+            </CardContent>
+          </Card>
 
-                  <br />
-                  <br />
-                </Typography>
-                <Typography
-                  className="textHover"
-                  sx={{
-                    width: "200px",
-                    transition: "all 0.3s ease-in-out",
-                    overflow: "hidden",
-                    whiteSpace: "nowrap",
-                  }}
-                  variant="body2"
-                >
-                  {language === "english" ? itInfrastruc : itInfrastruc2}
-                </Typography>
-              </CardContent>
-            </Card>
-          </GripItem>
-          <GripItem>
-            <Card
-              className="card"
+          <Card
+            className="card"
+            sx={{
+              width: "250px",
+              minHeight: "150px",
+              height: "250px",
+              backgroundColor: "rgba(0,0,0,0.1)",
+              color: "white",
+            }}
+          >
+            <CardContent
               sx={{
-                minHeight: "150px",
-                height: "250px",
-                backgroundColor: "rgba(0,0,0,0.1)",
-                color: "white",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
               }}
             >
-              <CardContent
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  flexDirection: "column",
-                }}
-              >
-                <Box
-                  sx={{ color: "white", width: "35%", marginTop: "1rem" }}
-                  component="img"
-                  src="img/transformacion-digital.svg"
-                />
-                <Typography textAlign="center" variant="h5" component="div">
-                  {language === "english" ? (
-                    <>Digital Transformation</>
-                  ) : (
-                    <>Transformación Digital</>
-                  )}
+              <Box
+                sx={{ color: "white", width: "35%", marginTop: "1rem" }}
+                component="img"
+                src="img/infraestrucutra-ti.svg"
+              />
+              <Typography textAlign="center" variant="h5" component="div">
+                {language === "english" ? (
+                  <>
+                    IT infrastructure
+                    <br />
+                  </>
+                ) : (
+                  "Infraestructura de TI"
+                )}
 
-                  <br />
-                  <br />
-                </Typography>
-                <Typography className="textHover" variant="body2">
-                  {language === "english" ? digital : digital2}
-                </Typography>
-              </CardContent>
-            </Card>
-          </GripItem>
-          <GripItem isLast>
-            {" "}
-            <Box
-              sx={{ height: "40%", borderBottom: "#2f3742 solid 1px" }}
-            ></Box>
-          </GripItem>
-        </GripContainer>
-        <GripContainer>
-          <GripItem>
-            {" "}
-            <Box
-              sx={{ height: "40%", borderBottom: "#2f3742 solid 1px" }}
-            ></Box>
-          </GripItem>
-          <GripItem>
-            <Box
-              sx={{ height: "40%", borderBottom: "#2f3742 solid 1px" }}
-            ></Box>
-          </GripItem>
-          <GripItem>
-            {" "}
-            <Card
-              className="card"
-              sx={{
-                minHeight: "150px",
-                height: "250px",
-                backgroundColor: "rgba(0,0,0,0.1)",
-                color: "white",
-              }}
-            >
-              <CardContent
+                <br />
+                <br />
+              </Typography>
+              <Typography
+                className="textHover"
                 sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  flexDirection: "column",
+                  width: "200px",
+                  transition: "all 0.3s ease-in-out",
+                  overflow: "hidden",
+                  whiteSpace: "nowrap",
                 }}
+                variant="body2"
               >
-                <Box
-                  sx={{ color: "white", width: "35%", marginTop: "1rem" }}
-                  component="img"
-                  src="img/seguridad.svg"
-                />
-                <Typography textAlign="center" variant="h5" component="div">
-                  {language === "english" ? <>Security</> : <>Seguridad</>}
+                {language === "english" ? itInfrastruc : itInfrastruc2}
+              </Typography>
+            </CardContent>
+          </Card>
 
-                  <br />
-                  <br />
-                </Typography>
-                <Typography className="textHover" variant="body2">
-                  {language === "english" ? seguridad : seguridad2}
-                </Typography>
-              </CardContent>
-            </Card>
-          </GripItem>
-          <GripItem>
-            <Card
-              className="card"
+          <Card
+            className="card"
+            sx={{
+              width: "250px",
+              minHeight: "150px",
+              height: "250px",
+              backgroundColor: "rgba(0,0,0,0.1)",
+              color: "white",
+            }}
+          >
+            <CardContent
               sx={{
-                minHeight: "150px",
-                height: "250px",
-                backgroundColor: "rgba(0,0,0,0.1)",
-                color: "white",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
               }}
             >
-              <CardContent
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  flexDirection: "column",
-                }}
-              >
-                <Box
-                  sx={{ color: "white", width: "35%", marginTop: "1rem" }}
-                  component="img"
-                  src="img/consultoria.svg"
-                />
-                <Typography textAlign="center" variant="h5" component="div">
-                  {language === "english" ? <>Consultancy</> : <>Consultoría</>}
-                  <br />
-                  <br />
-                </Typography>
-                <Typography className="textHover" variant="body2">
-                  {language === "english" ? consultoria : consultoria2}
-                </Typography>
-              </CardContent>
-            </Card>
-          </GripItem>
-          <GripItem>
-            <Card
-              className="card"
-              sx={{
-                minHeight: "150px",
-                height: "250px",
-                backgroundColor: "rgba(0,0,0,0.1)",
-                color: "white",
-              }}
-            >
-              <CardContent
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  flexDirection: "column",
-                }}
-              >
-                <Box
-                  sx={{ color: "white", width: "35%", marginTop: "1rem" }}
-                  component="img"
-                  src="img/cloud.svg"
-                />
-                <Typography textAlign="center" variant="h5" component="div">
-                  {language === "english" ? (
-                    <>Cloud Computing Services</>
-                  ) : (
-                    <>Cloud Computing Services</>
-                  )}
-                </Typography>
-                <Typography className="textHover" variant="body2">
-                  {language === "english" ? cloud : cloud2}
-                </Typography>
-              </CardContent>
-            </Card>
-          </GripItem>
+              <Box
+                sx={{ color: "white", width: "35%", marginTop: "1rem" }}
+                component="img"
+                src="img/transformacion-digital.svg"
+              />
+              <Typography textAlign="center" variant="h5" component="div">
+                {language === "english" ? (
+                  <>Digital Transformation</>
+                ) : (
+                  <>Transformación Digital</>
+                )}
 
-          <GripItem isLast>
-            {" "}
-            <Box
-              sx={{ height: "40%", borderBottom: "#2f3742 solid 1px" }}
-            ></Box>
-          </GripItem>
-        </GripContainer>
-        <GripContainer>
-          <GripItem>
-            {" "}
-            <Box
-              sx={{ height: "40%", borderBottom: "#2f3742 solid 1px" }}
-            ></Box>
-          </GripItem>
-          <GripItem>
-            <Box
-              sx={{ height: "40%", borderBottom: "#2f3742 solid 1px" }}
-            ></Box>
-          </GripItem>
-          <GripItem>
-            {" "}
-            <Card
-              className="card"
+                <br />
+                <br />
+              </Typography>
+              <Typography className="textHover" variant="body2">
+                {language === "english" ? digital : digital2}
+              </Typography>
+            </CardContent>
+          </Card>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", md: "row" },
+            justifyContent: { xs: "center", md: "center" },
+            alignItems: { xs: "center", md: "center" },
+          }}
+        >
+          <Card
+            className="card"
+            sx={{
+              width: "250px",
+              minHeight: "150px",
+              height: "250px",
+              backgroundColor: "rgba(0,0,0,0.1)",
+              color: "white",
+            }}
+          >
+            <CardContent
               sx={{
-                minHeight: "150px",
-                height: "250px",
-                backgroundColor: "rgba(0,0,0,0.1)",
-                color: "white",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
               }}
             >
-              <CardContent
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  flexDirection: "column",
-                }}
-              >
-                <Box
-                  sx={{ color: "white", width: "35%", marginTop: "1rem" }}
-                  component="img"
-                  src="img/migracion.svg"
-                />
-                <Typography textAlign="center" variant="h5" component="div">
-                  {language === "english" ? (
-                    <>
-                      Data Migrations
-                      <br />
-                      <br />
-                    </>
-                  ) : (
-                    <>Migraciones de Datos</>
-                  )}
-                </Typography>
-                <Typography className="textHover" variant="body2">
-                  {language === "english" ? migracion : migracion2}
-                </Typography>
-              </CardContent>
-            </Card>
-          </GripItem>
-          <GripItem>
-            <Card
-              className="card"
+              <Box
+                sx={{ color: "white", width: "35%", marginTop: "1rem" }}
+                component="img"
+                src="img/seguridad.svg"
+              />
+              <Typography textAlign="center" variant="h5" component="div">
+                {language === "english" ? <>Security</> : <>Seguridad</>}
+
+                <br />
+                <br />
+              </Typography>
+              <Typography className="textHover" variant="body2">
+                {language === "english" ? seguridad : seguridad2}
+              </Typography>
+            </CardContent>
+          </Card>
+
+          <Card
+            className="card"
+            sx={{
+              width: "250px",
+              minHeight: "150px",
+              height: "250px",
+              backgroundColor: "rgba(0,0,0,0.1)",
+              color: "white",
+            }}
+          >
+            <CardContent
               sx={{
-                minHeight: "150px",
-                height: "250px",
-                backgroundColor: "rgba(0,0,0,0.1)",
-                color: "white",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
               }}
             >
-              <CardContent
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  flexDirection: "column",
-                }}
-              >
-                <Box
-                  sx={{ color: "white", width: "35%", marginTop: "1rem" }}
-                  component="img"
-                  src="img/tablet-y-movil.svg"
-                />
-                <Typography textAlign="center" variant="h5" component="div">
-                  {language === "english" ? (
-                    <>Application Development </>
-                  ) : (
-                    <>Desarrollo de aplicaciones</>
-                  )}
-                </Typography>
-                <Typography className="textHover" variant="body2">
-                  {language === "english" ? app : app2}
-                </Typography>
-              </CardContent>
-            </Card>
-          </GripItem>
-          <GripItem>
-            <Box
-              sx={{ height: "40%", borderBottom: "#2f3742 solid 1px" }}
-            ></Box>
-          </GripItem>
-          <GripItem isLast>
-            {" "}
-            <Box
-              sx={{ height: "40%", borderBottom: "#2f3742 solid 1px" }}
-            ></Box>
-          </GripItem>
-        </GripContainer>
-        <GripContainer spaceMid>
-          <GripItem></GripItem>
-          <GripItem></GripItem>
-          <GripItem></GripItem>
-          <GripItem></GripItem>
-          <GripItem></GripItem>
-          <GripItem isLast></GripItem>
-        </GripContainer>
+              <Box
+                sx={{ color: "white", width: "35%", marginTop: "1rem" }}
+                component="img"
+                src="img/consultoria.svg"
+              />
+              <Typography textAlign="center" variant="h5" component="div">
+                {language === "english" ? <>Consultancy</> : <>Consultoría</>}
+                <br />
+                <br />
+              </Typography>
+              <Typography className="textHover" variant="body2">
+                {language === "english" ? consultoria : consultoria2}
+              </Typography>
+            </CardContent>
+          </Card>
+
+          <Card
+            className="card"
+            sx={{
+              width: "250px",
+              minHeight: "150px",
+              height: "250px",
+              backgroundColor: "rgba(0,0,0,0.1)",
+              color: "white",
+            }}
+          >
+            <CardContent
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+              }}
+            >
+              <Box
+                sx={{ color: "white", width: "35%", marginTop: "1rem" }}
+                component="img"
+                src="img/cloud.svg"
+              />
+              <Typography textAlign="center" variant="h5" component="div">
+                {language === "english" ? (
+                  <>Cloud Computing Services</>
+                ) : (
+                  <>Cloud Computing Services</>
+                )}
+              </Typography>
+              <Typography className="textHover" variant="body2">
+                {language === "english" ? cloud : cloud2}
+              </Typography>
+            </CardContent>
+          </Card>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", md: "row" },
+            justifyContent: { xs: "center", md: "center" },
+            alignItems: { xs: "center", md: "center" },
+          }}
+        >
+          <Card
+            className="card"
+            sx={{
+              width: "250px",
+
+              minHeight: "150px",
+              height: "250px",
+              backgroundColor: "rgba(0,0,0,0.1)",
+              color: "white",
+            }}
+          >
+            <CardContent
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+              }}
+            >
+              <Box
+                sx={{ color: "white", width: "35%", marginTop: "1rem" }}
+                component="img"
+                src="img/migracion.svg"
+              />
+              <Typography textAlign="center" variant="h5" component="div">
+                {language === "english" ? (
+                  <>
+                    Data Migrations
+                    <br />
+                    <br />
+                  </>
+                ) : (
+                  <>Migraciones de Datos</>
+                )}
+              </Typography>
+              <Typography className="textHover" variant="body2">
+                {language === "english" ? migracion : migracion2}
+              </Typography>
+            </CardContent>
+          </Card>
+
+          <Card
+            className="card"
+            sx={{
+              width: "250px",
+              minHeight: "150px",
+              height: "250px",
+              backgroundColor: "rgba(0,0,0,0.1)",
+              color: "white",
+            }}
+          >
+            <CardContent
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+              }}
+            >
+              <Box
+                sx={{ color: "white", width: "35%", marginTop: "1rem" }}
+                component="img"
+                src="img/tablet-y-movil.svg"
+              />
+              <Typography textAlign="center" variant="h5" component="div">
+                {language === "english" ? (
+                  <>Application Development </>
+                ) : (
+                  <>Desarrollo de aplicaciones</>
+                )}
+              </Typography>
+              <Typography className="textHover" variant="body2">
+                {language === "english" ? app : app2}
+              </Typography>
+            </CardContent>
+          </Card>
+        </Box>
       </Box>
     </ContainerCustom>
   );

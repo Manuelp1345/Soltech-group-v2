@@ -24,8 +24,9 @@ const Header = () => {
     >
       <Typography
         sx={{
-          fontSize: "5rem",
+          fontSize: { xs: "2.5rem", md: "5rem" },
           fontWeight: "bold",
+          textAlign: { xs: "center", md: "left" },
         }}
       >
         {language === "english"
