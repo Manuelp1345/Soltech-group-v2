@@ -1,27 +1,10 @@
 import ButtonMenu from "./ButtonMenu";
 import { Box } from "@mui/system";
-import { IconButton, Menu, MenuItem, Typography } from "@mui/material";
+import { IconButton, Menu, Typography } from "@mui/material";
 import { Field, Form, Formik } from "formik";
 import { Language } from "../../App";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useContext, useEffect, useState } from "react";
-
-const options = [
-  "None",
-  "Atria",
-  "Callisto",
-  "Dione",
-  "Ganymede",
-  "Hangouts Call",
-  "Luna",
-  "Oberon",
-  "Phobos",
-  "Pyxis",
-  "Sedna",
-  "Titania",
-  "Triton",
-  "Umbriel",
-];
 
 const ITEM_HEIGHT = 48;
 
