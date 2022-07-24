@@ -70,30 +70,23 @@ const CustomMenu = () => {
         >
           Soltech Group
         </Typography>
-        <Formik initialValues={{ language: "" }} onSubmit={() => {}}>
-          {({ setFieldValue }) => (
-            <Form>
-              <Field
-                value={language}
-                name="language"
-                as="select"
-                //@ts-ignore
-                onChange={(event) => {
-                  setLanguage(event.target.value);
-                  setFieldValue("language", event.target.value);
-                  localStorage.setItem("language", event.target.value);
-                }}
-              >
-                <option value="english">
-                  {language === "english" ? "English" : "Ingles"}
-                </option>
-                <option value="spanish">
-                  {language === "english" ? "Spanish" : "Español"}
-                </option>
-              </Field>
-            </Form>
-          )}
-        </Formik>
+        <Box
+          component="img"
+          src={language === "english" ? "IMG/INGLATERRA.png" : "IMG/ESPAÑA.png"}
+          sx={{
+            width: "2rem",
+          }}
+          onClick={() => {
+            if (language === "english") {
+              setLanguage("spanish");
+              localStorage.setItem("language", "spanish");
+            }
+            if (language === "spanish") {
+              setLanguage("english");
+              localStorage.setItem("language", "english");
+            }
+          }}
+        />
       </Box>
       <Box
         component="ul"
