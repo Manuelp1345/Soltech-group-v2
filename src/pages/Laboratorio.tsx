@@ -238,8 +238,8 @@ const Laboratorio = () => {
           }}
         >
           {language === "english"
-            ? "Eccorinoquia Ethereum and Cryptocurrency Mining Center"
-            : "Eccorinoquia Centro de Minería de Ethereum y Criptomonedas"}
+            ? "EcoOrinoquia Ethereum and Cryptocurrency Mining Center"
+            : "EcoOrinoquia Centro de Minería de Ethereum y Criptomonedas"}
         </Typography>
         <Typography
           sx={{
@@ -251,8 +251,8 @@ const Laboratorio = () => {
         >
           {language === "english" ? (
             <>
-              Eccorinoquia is Soltech’s flagship mining facility located in
-              Meta. In its primary phase, Ecoorinoquia is under construction and
+              EcoOrinoquia is Soltech’s flagship mining facility located in
+              Meta. In its primary phase, EcoOrinoquia is under construction and
               is expected to be completed by the end of the second quarter of
               2022. In its initial phase, it will incorporate sustainable mining
               based on ecological and sustainable energies such as solar panels.
@@ -262,8 +262,8 @@ const Laboratorio = () => {
             </>
           ) : (
             <>
-              Eccorinoquia es la instalación minera insignia de Soltech ubicada
-              en el Meta. En su Fase primaria Ecoorinoquia está en construcción
+              EcoOrinoquia es la instalación minera insignia de Soltech ubicada
+              en el Meta. En su Fase primaria EcoOrinoquia está en construcción
               y se espera que esté completada a finales del segundo trimestre de
               2022. En su fase inicial incorporara minería sustentable basada en
               energías ecológicas y sustentables como paneles solares. Esta mina
