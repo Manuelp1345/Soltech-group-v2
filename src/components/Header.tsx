@@ -30,7 +30,7 @@ const Header = () => {
         }}
       >
         {language === "english"
-          ? "We put blockchange technology to reach your hands"
+          ? "We put Blockchange technology to reach your hands"
           : "Te ponemos la Tecnologia Blockchange al alcance de tus manos"}
       </Typography>
     </Box>

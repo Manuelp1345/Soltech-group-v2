@@ -31,7 +31,7 @@ const CustomMenu = () => {
       sx={{
         display: "flex",
         justifyContent: "space-between",
-        alignItems: { xs: "center", md: "flex-end" },
+        alignItems: { xs: "center", md: "center" },
         flexDirection: { xs: "column", md: "row" },
         backgroundColor: "rgba(0,0,0,0.5)",
         padding: "0.5rem",
@@ -50,7 +50,7 @@ const CustomMenu = () => {
       >
         <Box
           component="img"
-          src="IMG/logo sin letras.png"
+          src="img/logo.png"
           sx={{
             display: { xs: "none", md: "block", lg: "block" },
             width: "4rem",
@@ -71,7 +71,7 @@ const CustomMenu = () => {
         </Typography>
         <Box
           component="img"
-          src={language === "english" ? "IMG/INGLATERRA.png" : "IMG/ESPAÑA.png"}
+          src={language === "english" ? "img/INGLATERRA.png" : "img/ESP.png"}
           sx={{
             width: "2rem",
           }}
