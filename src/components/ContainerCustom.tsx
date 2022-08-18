@@ -4,9 +4,7 @@ import { Box } from "@mui/system";
 // @ts-ignore
 const ContainerCustom = ({ children, bg }) => {
   let bgUrl = "";
-  if (bg === "home") {
-    bgUrl = "url('img/1 HOME.jpg')";
-  }
+
   if (bg === "nosotros") {
     bgUrl = "url('img/2 NOSOTROS.jpg')";
   }
@@ -21,6 +19,64 @@ const ContainerCustom = ({ children, bg }) => {
   }
   if (bg === "Contacto") {
     bgUrl = "url('img/CONTACTO ARREGLADA.jpg')";
+  }
+
+  if (bg === "homes") {
+    return (
+      <Box sx={{ position: "relative" }}>
+        <Box
+          component="video"
+          src="img/BACKGROUND_PLEXUS_INVERBET.mp4"
+          autoPlay
+          loop
+          sx={{
+            position: "absolute",
+            width: "100%",
+            height: "100vh",
+            padding: "0",
+            margin: "0",
+            zIndex: "-1",
+            objectFit: "cover",
+          }}
+        >
+          <CustomMenu />
+          {children}
+        </Box>
+      </Box>
+    );
+  }
+  if (bg === "home") {
+    return (
+      <>
+        {" "}
+        <Box
+          component="video"
+          src="img/BACKGROUND_PLEXUS_INVERBET.mp4"
+          autoPlay={true}
+          loop
+          muted
+          sx={{
+            position: "absolute",
+            width: "100%",
+            height: "100vh",
+            padding: "0",
+            margin: "0",
+            zIndex: "-1",
+            objectFit: "cover",
+          }}
+        />
+        <Box
+          sx={{
+            height: "100%",
+            position: "absolute",
+            zIndex: "10",
+          }}
+        >
+          <CustomMenu />
+          {children}
+        </Box>
+      </>
+    );
   }
 
   return (
