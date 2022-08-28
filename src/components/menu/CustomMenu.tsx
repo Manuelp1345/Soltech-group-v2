@@ -13,7 +13,6 @@ import { Language } from "../../App";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useContext, useEffect, useState } from "react";
 import data from "../../data.json";
-import { Link } from "react-router-dom";
 
 const ITEM_HEIGHT = 48;
 
