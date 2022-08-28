@@ -1,20 +1,40 @@
 import ButtonMenu from "./ButtonMenu";
 import { Box } from "@mui/system";
-import { IconButton, Menu, Typography } from "@mui/material";
+import {
+  IconButton,
+  Menu,
+  Typography,
+  Button,
+  Collapse,
+  List,
+  ListItemButton,
+} from "@mui/material";
 import { Language } from "../../App";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useContext, useEffect, useState } from "react";
+import data from "../../data.json";
+import { Link } from "react-router-dom";
 
 const ITEM_HEIGHT = 48;
 
 const CustomMenu = () => {
   //@ts-ignore
   const { setLanguage, language } = useContext(Language);
+  const [openLanguaje, setOpenLanguaje] = useState(false);
+
+  let contenido = data.inglish;
+
+  if (language === "english") contenido = data.inglish;
+  if (language === "spanish") contenido = data.spanish;
+  if (language === "french") contenido = data.french;
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
+  };
+  const handleClickBtn = () => {
+    setOpenLanguaje(!openLanguaje);
   };
   const handleClose = () => {
     setAnchorEl(null);
@@ -24,7 +44,7 @@ const CustomMenu = () => {
     if (localStorage.getItem("language")) {
       setLanguage(localStorage.getItem("language"));
     }
-  }, [setLanguage, language]);
+  }, [setLanguage]);
 
   return (
     <Box
@@ -69,23 +89,102 @@ const CustomMenu = () => {
         >
           Soltech Group
         </Typography>
+
         <Box
-          component="img"
-          src={language === "english" ? "img/INGLATERRA.png" : "img/ESP.png"}
           sx={{
-            width: "2rem",
+            position: "relative",
           }}
-          onClick={() => {
-            if (language === "english") {
-              setLanguage("spanish");
-              localStorage.setItem("language", "spanish");
-            }
-            if (language === "spanish") {
-              setLanguage("english");
-              localStorage.setItem("language", "english");
-            }
-          }}
-        />
+        >
+          <Button
+            onClick={() => handleClickBtn()}
+            sx={{
+              color: "white",
+              fontSize: "1rem",
+              fontWeight: "bold",
+              padding: "0.5rem",
+            }}
+          >
+            <Box
+              component="img"
+              src={`img/${language}.png`}
+              sx={{
+                width: language === "french" ? "3rem" : "2rem",
+              }}
+            />
+          </Button>
+          <Collapse
+            sx={{
+              position: "absolute",
+              backgroundColor: "rgba(0,0,0,0.3)",
+              top: 45,
+              left: 0,
+            }}
+            in={openLanguaje}
+            timeout="auto"
+            unmountOnExit
+          >
+            <List component="div" disablePadding>
+              <ListItemButton
+                sx={{
+                  px: 1.5,
+                  fontSize: "1rem",
+                  display: language === "french" ? "none" : "block",
+                }}
+              >
+                <Box
+                  onClick={() => {
+                    setLanguage("french");
+                    handleClickBtn();
+                  }}
+                  component="img"
+                  src={"img/french.png"}
+                  sx={{
+                    width: "2.5rem",
+                    height: 30,
+                  }}
+                />
+              </ListItemButton>
+              <ListItemButton
+                sx={{
+                  px: 2,
+                  fontSize: "1rem",
+                  display: language === "english" ? "none" : "block",
+                }}
+              >
+                <Box
+                  onClick={() => {
+                    setLanguage("english");
+                    handleClickBtn();
+                  }}
+                  component="img"
+                  src={"img/english.png"}
+                  sx={{
+                    width: "2rem",
+                  }}
+                />
+              </ListItemButton>
+              <ListItemButton
+                sx={{
+                  px: 2,
+                  fontSize: "1rem",
+                  display: language === "spanish" ? "none" : "block",
+                }}
+              >
+                <Box
+                  onClick={() => {
+                    setLanguage("spanish");
+                    handleClickBtn();
+                  }}
+                  component="img"
+                  src={"img/spanish.png"}
+                  sx={{
+                    width: "2rem",
+                  }}
+                />
+              </ListItemButton>
+            </List>
+          </Collapse>
+        </Box>
       </Box>
       <Box
         component="ul"
@@ -100,17 +199,15 @@ const CustomMenu = () => {
       >
         <ButtonMenu to="/">Home</ButtonMenu>
         <ButtonMenu isExpanded to="/nosotros">
-          {language === "english" ? "About US" : "Nosotros"}
+          {contenido.nosotros.titulo}
         </ButtonMenu>
         <ButtonMenu to="/lo-que-hacemos">
-          {language === "english" ? "What We Do" : " Lo que hacemos"}
+          {contenido.loQueHacemos.titulo}
         </ButtonMenu>
         {/*         <ButtonMenu to="/recursos">Recursos</ButtonMenu> */}
-        <ButtonMenu to="/lab">
-          {language === "english" ? "Soltech Labs" : "Laboratorios Soltech"}
-        </ButtonMenu>
+        <ButtonMenu to="/lab">{contenido.lab.titulo}</ButtonMenu>
         <ButtonMenu to="/contacto" lastBtn>
-          {language === "english" ? "Contact" : "Contacto"}
+          {contenido.contat}
         </ButtonMenu>
       </Box>
       <Box sx={{ display: { xs: "block", md: "none" } }}>
@@ -144,18 +241,14 @@ const CustomMenu = () => {
           <ButtonMenu to="/vision">
             {language === "english" ? "Vision" : "Visión"}
           </ButtonMenu>
-          <ButtonMenu to="/nosotros">
-            {language === "english" ? "Team" : "Team"}
-          </ButtonMenu>
+          <ButtonMenu to="/nosotros">{contenido.team}</ButtonMenu>
           <ButtonMenu to="/lo-que-hacemos">
-            {language === "english" ? "What We Do" : " Lo que hacemos"}
+            {contenido.loQueHacemos.titulo}
           </ButtonMenu>
           {/*         <ButtonMenu to="/recursos">Recursos</ButtonMenu> */}
-          <ButtonMenu to="/lab">
-            {language === "english" ? "Soltech Labs" : "Laboratorios Soltech"}
-          </ButtonMenu>
+          <ButtonMenu to="/lab">{contenido.lab.titulo}</ButtonMenu>
           <ButtonMenu to="/contacto" lastBtn>
-            {language === "english" ? "Contact" : "Contacto"}
+            {contenido.contat}
           </ButtonMenu>
         </Menu>
       </Box>

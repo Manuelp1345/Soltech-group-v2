@@ -3,10 +3,17 @@ import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
 import { useContext } from "react";
 import { Language } from "../App";
+import data from "../data.json";
 
 const Header = () => {
   //@ts-ignore
   const { language } = useContext(Language);
+
+  let contenido = data.inglish;
+
+  if (language === "english") contenido = data.inglish;
+  if (language === "spanish") contenido = data.spanish;
+  if (language === "french") contenido = data.french;
 
   return (
     <Box
@@ -29,9 +36,7 @@ const Header = () => {
           textAlign: { xs: "center", md: "left" },
         }}
       >
-        {language === "english"
-          ? "We put Blockchain  technology to reach your hands"
-          : "Te ponemos la Tecnologia Blockchain  al alcance de tus manos"}
+        {contenido.home}
       </Typography>
     </Box>
   );

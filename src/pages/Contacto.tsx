@@ -5,10 +5,16 @@ import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
 import { useContext } from "react";
 import { Language } from "../App";
+import data from "../data.json";
 
 const Contacto = () => {
   // @ts-ignore
   const { language } = useContext(Language);
+  let contenido = data.inglish;
+
+  if (language === "english") contenido = data.inglish;
+  if (language === "spanish") contenido = data.spanish;
+  if (language === "french") contenido = data.french;
   return (
     <ContainerCustom bg="Contacto">
       <Box
@@ -36,7 +42,7 @@ const Contacto = () => {
               fontSize: "2.5rem",
             }}
           >
-            {language === "english" ? "Contacts" : "Contactos"}
+            {contenido.contat}
           </Typography>
           <Typography
             sx={{
@@ -47,7 +53,11 @@ const Contacto = () => {
               fontSize: "2rem",
             }}
           >
-            {language === "english" ? "England" : "Inglaterra"}
+            {language === "english"
+              ? "England"
+              : language === "french"
+              ? "Angleterre"
+              : "Inglaterra"}
           </Typography>
           <Typography
             sx={{
@@ -72,6 +82,8 @@ const Contacto = () => {
             <span style={{ fontWeight: "bold" }}>
               {language === "english" ? (
                 <>Phone:&nbsp;</>
+              ) : language === "french" ? (
+                <>téléphoner:&nbsp;</>
               ) : (
                 <>Telefono:&nbsp;</>
               )}
@@ -87,7 +99,7 @@ const Contacto = () => {
             }}
           >
             <span style={{ fontWeight: "bold" }}>
-              {language === "english" ? <>Email:&nbsp;</> : <>Correo:&nbsp;</>}
+              <>Email:&nbsp;</>
             </span>
             admin@soltechgr.com
           </Typography>
@@ -102,6 +114,8 @@ const Contacto = () => {
           >
             {language === "english"
               ? "Colombia ( development Center )"
+              : language === "french"
+              ? "Colombia ( centre de développement )"
               : "Colombia ( centro de desarrollo )"}
           </Typography>
           <Typography
@@ -126,6 +140,8 @@ const Contacto = () => {
             <span style={{ fontWeight: "bold" }}>
               {language === "english" ? (
                 <>Phone:&nbsp;</>
+              ) : language === "french" ? (
+                <>téléphoner:&nbsp;</>
               ) : (
                 <>Telefono:&nbsp;</>
               )}
@@ -141,7 +157,7 @@ const Contacto = () => {
             }}
           >
             <span style={{ fontWeight: "bold" }}>
-              {language === "english" ? <>Email:&nbsp;</> : <>Correo:&nbsp;</>}
+              <>Email:&nbsp;</>
             </span>
             admin@soltechgroup.net
           </Typography>

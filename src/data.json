@@ -1,0 +1,226 @@
+{
+  "spanish": {
+    "team": "Team",
+    "contat": "contacto",
+    "home": "Te ponemos la Tecnologia Blockchain  al alcance de tus manos",
+    "nosotros": {
+      "titulo": "Nosotros",
+      "desc": "Somos un equipo integral y multidisciplinario con capacidad de crear soluciones innovadoras, adaptadas a las necesidades de nuestros clientes, ofreciendo productos de calidad con el mejor seguimiento postventa, garantizando la excelencia en todos nuestros servicios, generando satisfacción y confianza, tenemos como objetivo el crecimiento sostenido de la empresa, la rentabilidad y el desarrollo profesional de nuestros colaboradores."
+    },
+    "vision": {
+      "titulo": "Visión",
+      "desc": "Posicionarnos como una empresa pionera a nivel mundial, en el desarrollo de productos basados en tecnología Blockchain, integrando soluciones a todos los niveles que permitan mejorar la calidad de vida de las personas y las empresas."
+    },
+    "loQueHacemos": {
+      "titulo": "Lo que Hacemos",
+      "desc": {
+        "tecBG": {
+          "titulo": "Tecnologías BlockChain",
+          "desc": "Desarrollamos Criptomonedas, Token y NFT compatibles con múltiples Exchange"
+        },
+        "iTI": {
+          "titulo": "Infraestructura de TI",
+          "desc": "Diseñamos y Suministramos la Infraestructura de TI que se adapte de forma correcta a las necesidades de tu empresa, con una alta escalabilidad en el Tiempo."
+        },
+        "tG": {
+          "titulo": "Transformación Digital",
+          "desc": "Intervención para estimular la aceleración de la transformación digital de las empresas."
+        },
+        "seguridad": {
+          "titulo": "Seguridad",
+          "desc": "Protegemos la Integridad y Privacidad de la Data de tu Empresa."
+        },
+        "cCS": {
+          "titulo": "Cloud Computing Services",
+          "desc": "Alquiler de plataforma de Computo en la Nube para el procesamiento de Datos."
+        },
+        "consultoria": {
+          "titulo": "Consultoría",
+          "desc": "Te asesoramos sobre cómo conseguir una estrategia TIC adaptada a tus necesidades y enfocada a resultados para tu empresa."
+        },
+        "migracionDatos": {
+          "titulo": "Migraciones de Datos",
+          "desc": "Trasladamos la Data de tu empresa de una plataforma a otra (de un Sistema a Otro), con el uso de Scrapy de Datos de Cualquier Plataforma (Minería de Datos)."
+        },
+        "devApps": {
+          "titulo": "Desarrollo de aplicaciones",
+          "desc": "Creamos Aplicaciones para todo tipo de dispositivos electrónicos digitales"
+        }
+      }
+    },
+    "lab": {
+      "titulo": "Laboratorios Soltech",
+      "desc": "Tenemos instalaciones de vanguardia tecnológica ubicadas en sitios estratégicos de América Latina, donde los costos de luz, recursos humanos e internet nos dan ventajas competitivas a nivel corporativo. Nuestros laboratorios de investigación y desarrollo están dotados de los equipos más recientes e implementan lo último en tecnología, vamos de la mano con HP, Microsoft, VMWARE y otros socios estratégicos para crear productos robustos, seguros y confiables con altos estándares de calidad. Tenemos equipos de Ingenieros especialistas de forma permanente, siempre listos para la accionar en cualquier circunstancia."
+    },
+    "Soltech Cloud": {
+      "titulo": "Soltech Cloud",
+      "desc": "Nuestros tres centros de datos poseen los mejores accesos a troncales internacionales de fibra óptica en varios países de América, en conjunción con lo último en servidores dedicados Cisco, Oracle, Lenovo y HP, para crear redundancia y acceso 24/7 a los servicios cuando es necesario."
+    },
+    "centroDev": {
+      "titulo": "Soltech Villavicencio Centro de Desarrollo Permanente",
+      "desc": "Poseemos instalaciones en el corazón de Colombia, adecuadas para la permanencia de nuestro personal 24/7 durante las fases de ejecución de nuestros proyectos, por lo que podemos ofrecer soluciones en tiempo récords, nuestros desarrolladores tienen la facilidad de tener los mejores equipos, con mejores áreas de descanso y pernocta para no separarse nunca de los ciclos de desarrollo de nuestros productos, permitiendo de esta forma, integrar permanentemente la tecnología, con la nuevas ideas y características necesarias para alcanzar los más altos estándares de calidad."
+    },
+    "Soltech Group UK": {
+      "titulo": "Soltech Group UK",
+      "desc": "Poseemos una oficina gerencial de Atención y Soporte Londres, en Europa para estar más cerca de nuestros clientes y dar el mejor servicio."
+    },
+    "supService": {
+      "titulo": "Soltech Support Service",
+      "desc": "Nuestros talleres de soporte técnico y reparaciones permiten a nuestro staff de ingenieros permanentes dar servicio a nuestros clientes, a nuestras propias instalaciones, brindándonos autonomía al momento de responder a fallas eventuales inesperadas o situaciones de riesgo. Solucionamos problemas con nuestros propios equipos de técnicos especializados, además nuestro departamento de soporte técnico, se puede movilizar a cualquier parte del planeta en tiempo récord para solucionar los problemas a nuestros clientes."
+    },
+    "EcoOri": {
+      "titulo": "Eccorinoquia Centro de Minería de Ethereum y Criptomonedas",
+      "desc": "Eccorinoquia es la instalación minera insignia de Soltech ubicada en el Meta. En su Fase primaria Ecoorinoquia está en construcción y se espera que esté completada a finales del segundo trimestre de 2022. En su fase inicial incorporara minería sustentable basada en energías ecológicas y sustentables como paneles solares. Esta mina nos permite dar ejemplos a nuestros clientes de como acceder a la tecnología de minería de criptomonedas y monetizar sus inversiones a corto y mediano plazo."
+    }
+  },
+  "inglish": {
+    "team": "Team",
+    "contat": "contact",
+
+    "home": "We put Blockchain  technology to reach your hands",
+    "nosotros": {
+      "titulo": "About US",
+      "desc": "We are a comprehensive and multidisciplinary team with the ability to create innovative solutions, adapted to the needs of our customers, offering high quality products with the best after-sales follow-up, guaranteeing excellence in all our services, generating satisfaction and confidence, we aim at the sustained growth of the company, the profitability and the professional development of our collaborators."
+    },
+    "vision": {
+      "titulo": "Vision",
+      "desc": "Position ourselves as a pioneer company worldwide, in the development of products based on Blockchain technology, integrating solutions at all levels that allow improving the quality of life of people and companies."
+    },
+    "loQueHacemos": {
+      "titulo": "What We Do",
+      "desc": {
+        "tecBG": {
+          "titulo": "Blockchain technologies",
+          "desc": "We develop Cryptocurrencies, Tokens and NFTs compatible with multiple Exchanges."
+        },
+        "iTI": {
+          "titulo": "IT infrastructure",
+          "desc": "We design and supply the IT infrastructure that adapts correctly to the needs of your company, with high scalability over time."
+        },
+        "tG": {
+          "titulo": "Digital Transformation",
+          "desc": "Intervention to stimulate the acceleration of the digital transformation of companies."
+        },
+        "seguridad": {
+          "titulo": "Security",
+          "desc": "We protect the Integrity and Privacy of your Company’s Data."
+        },
+        "cCS": {
+          "titulo": "Cloud Computing Services",
+          "desc": "Cloud Computing Platform Rental for Data Processing"
+        },
+        "consultoria": {
+          "titulo": "Consultancy",
+          "desc": "We advise you on how to achieve an ICT strategy adapted to your needs and focused on results for your company"
+        },
+        "migracionDatos": {
+          "titulo": "Data Migrations",
+          "desc": "We transfer the data of your company from one platform to another (from one system to another), with the Scrapy use of Data from Any Platform (Data Mining)."
+        },
+        "devApps": {
+          "titulo": "Application Development ",
+          "desc": "We create Applications for all types of digital electronic devices."
+        }
+      }
+    },
+    "lab": {
+      "titulo": "Soltech Labs",
+      "desc": "We have state-of-the-art technological facilities located in strategic locations in Latin America, where the costs of electricity, human resources and the Internet give us competitive advantages at the corporate level. Our research and development laboratories are equipped with the latest equipment and implement the latest technology, we go hand in hand with HP, Microsoft, VMWARE and other strategic partners to create robust, safe and reliable products with high quality standards. We have teams of specialist engineers permanently, always ready to act in any circumstance."
+    },
+    "Soltech Cloud": {
+      "titulo": "Soltech Cloud",
+      "desc": "Our three data centers have the best access to international fiber optic backbones in several countries in the Americas, in conjunction with the latest Cisco, Oracle, Lenovo and HP dedicated servers, to create redundancy and 24/7 access to services when needed. necessary."
+    },
+    "centroDev": {
+      "titulo": "Soltech Villavicencio Permanent Development Center",
+      "desc": "We have facilities in the heart of Colombia, suitable for the permanence of our staff 24/7 during the execution phases of our projects, so we can offer solutions in record time, our developers have the facility of having the best teams, with the best rest and overnight areas to never be separated from the development cycles of our products, thus allowing us to permanently integrate technology with the new ideas and features necessary to achieve the highest quality standards."
+    },
+    "Soltech Group UK": {
+      "titulo": "Soltech Group UK",
+      "desc": "We have a London Service and Support management office in Europe to be closer to our customers and provide the best service."
+    },
+    "supService": {
+      "titulo": "Soltech Support Service",
+      "desc": "Our technical support and repair workshops allow our staff of permanent engineers to provide service to our clients, to our own facilities, giving us autonomy when responding to eventual unexpected failures or risk situations. We solve problems with our own teams of specialized technicians, in addition to our technical support department, which can be mobilized to any part of the planet in record time to solve problems for our customers."
+    },
+    "EcoOri": {
+      "titulo": "Eccorinoquia Ethereum and Cryptocurrency Mining Center",
+      "desc": "Eccorinoquia is Soltech’s flagship mining facility located in Meta. In its primary phase, Ecoorinoquia is under construction and is expected to be completed by the end of the second quarter of 2022. In its initial phase, it will incorporate sustainable mining based on ecological and sustainable energies such as solar panels. This mine allows us to give our clients examples of how to access cryptocurrency mining technology and monetize their investments in the short and medium term."
+    }
+  },
+  "french": {
+    "servicios": "",
+    "team": "équipe",
+    "contat": "Contactez",
+    "home": "Nous mettons la technologie Blockchain à portée de main",
+    "nosotros": {
+      "titulo": "Nous",
+      "desc": "Sommes une équipe complète et multidisciplinaire avec la capacité de créer des solutions innovantes, adaptées aux besoins de nos clients, offrant des produits de qualité avec le meilleur suivi après-vente, garantissant l'excellence dans tous nos services, générant satisfaction et confiance, notre objectif est la croissance soutenue de l'entreprise, la rentabilité et le développement professionnel de nos collaborateurs."
+    },
+    "vision": {
+      "titulo": "Vision",
+      "desc": "Nous positionner comme une entreprise pionnière dans le monde entier, dans le développement de produits basés sur la technologie Blockchain, intégrant des solutions à tous les niveaux qui permettent d’améliorer la qualité de vie des personnes et des entreprises."
+    },
+    "loQueHacemos": {
+      "titulo": "Ce que nous faisons",
+      "desc": {
+        "tecBG": {
+          "titulo": "Technologies de la chaîne de blocs",
+          "desc": "Nous développons des crypto-monnaies, des jetons et des NFT compatibles avec plusieurs échanges"
+        },
+        "iTI": {
+          "titulo": "IT Infrastructure ",
+          "desc": "Nous concevons et fournissons l'infrastructure informatique qui s'adapte correctement aux besoins de votre entreprise, avec une grande évolutivité dans le temps."
+        },
+        "tG": {
+          "titulo": "Transformation Numérique",
+          "desc": "Intervention pour stimuler l'accélération de la transformation digitale des entreprises."
+        },
+        "seguridad": {
+          "titulo": "Sécurité",
+          "desc": "Nous protégeons l'intégrité et la confidentialité des données de votre entreprise."
+        },
+        "cCS": {
+          "titulo": "Services d’informatique en nuage",
+          "desc": "Location d’une plateforme de Cloud Computing pour le traitement des données"
+        },
+        "consultoria": {
+          "titulo": "Conseil",
+          "desc": "Nous vous conseillons pour réaliser une stratégie ICT adaptée à vos besoins et axé sur les résultats pour votre entreprise."
+        },
+        "migracionDatos": {
+          "titulo": "Migrations de données",
+          "desc": "Nous transférons les données de votre entreprise d'une plate-forme à une autre (d'un système à un autre), avec l'utilisation de Data Scrapy de n'importe quelle plate-forme (Data Mining)."
+        },
+        "devApps": {
+          "titulo": "Développement d'applications ",
+          "desc": "Nous créons des applications pour tous les types d'appareils électroniques numériques"
+        }
+      }
+    },
+    "lab": {
+      "titulo": "Laboratoires Soltech",
+      "desc": "Nous disposons d’installations technologiques de pointe situées dans des endroits stratégiques en Amérique latine, où les coûts de l’électricité, des ressources humaines et d’Internet nous confèrent des avantages concurrentiels au niveau de l’entreprise. Nos laboratoires de recherche et développement sont équipés des derniers équipements et mettent en œuvre les dernières technologies, nous allons main dans la main avec HP, Microsoft, VMWARE et d’autres partenaires stratégiques pour créer des produits robustes, sûrs et fiables avec des normes de qualité élevées. Nous disposons en permanence d’équipes d’ingénieurs spécialisés, toujours prêts à intervenir en toute circonstance."
+    },
+    "Soltech Cloud": {
+      "titulo": "Nuage Soltech",
+      "desc": "Nos trois centres de données ont le meilleur accès aux backbones internationaux en fibre optique dans plusieurs pays des Amériques, en conjonction avec les derniers serveurs dédiés Cisco, Oracle, Lenovo et HP, pour créer une redondance et un accès 24h/24 et 7j/7 aux services en cas de besoin. nécessaire."
+    },
+    "centroDev": {
+      "titulo": "Centre de développement permanent de Soltech Villavicencio",
+      "desc": "Nous avons des installations au cœur de la Colombie, adaptées à la permanence de notre personnel 24h/24 et 7j/7 pendant les phases d’exécution de nos projets, nous pouvons donc proposer des solutions en un temps record, nos développeurs ont la facilité d’avoir les meilleures équipes, avec les meilleurs les aires de repos et de nuit pour ne jamais être séparées des cycles de développement de nos produits, nous permettant ainsi d’intégrer en permanence la technologie avec les nouvelles idées et fonctionnalités nécessaires pour atteindre les normes de qualité les plus élevées."
+    },
+    "Soltech Group UK": {
+      "titulo": "Groupe Soltech Royaume-Uni",
+      "desc": "Nous avons un bureau de gestion du service et du support à Londres en Europe pour être plus proche de nos clients et fournir le meilleur service."
+    },
+    "supService": {
+      "titulo": "Service d’assistance Soltech",
+      "desc": "Nos ateliers de support technique et de réparation permettent à notre pile d’ingénieurs permanents de fournir un service à nos clients, à nos propres installations, nous donnant une autonomie pour répondre à d’éventuelles pannes imprévues ou à des situations à risque. Nous résolvons les problèmes avec nos propres équipes de techniciens spécialisés, en plus de notre service de support technique, qui peut être mobilisé n’importe où sur la planète en un temps record pour résoudre les problèmes de nos clients."
+    },
+    "EcoOri": {
+      "titulo": "Eccorinoquia Ethereum et centre d’extraction de crypto-monnaie",
+      "desc": "Eccorinoquia est l’installation minière phare de Soltech située à Meta. Dans sa phase primaire, Ecoorinoquia est en construction et devrait être achevée d’ici la fin du deuxième trimestre 2022. Dans sa phase initiale, elle intégrera une exploitation minière durable basée sur des énergies écologiques et durables telles que des panneaux solaires. Cette mine nous permet de donner à nos clients des exemples sur la manière d’accéder à la technologie de minage de cryptomonnaies et de monétiser leurs investissements à court et moyen terme."
+    }
+  }
+}
