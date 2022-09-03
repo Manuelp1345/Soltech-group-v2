@@ -134,6 +134,7 @@ const CustomMenu = () => {
                   onClick={() => {
                     setLanguage("french");
                     handleClickBtn();
+                    localStorage.setItem("language", "french");
                   }}
                   component="img"
                   src={"img/french.png"}
@@ -154,6 +155,7 @@ const CustomMenu = () => {
                   onClick={() => {
                     setLanguage("english");
                     handleClickBtn();
+                    localStorage.setItem("language", "english");
                   }}
                   component="img"
                   src={"img/english.png"}
@@ -172,6 +174,7 @@ const CustomMenu = () => {
                 <Box
                   onClick={() => {
                     setLanguage("spanish");
+                    localStorage.setItem("language", "spanish");
                     handleClickBtn();
                   }}
                   component="img"

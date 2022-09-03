@@ -17,13 +17,13 @@ function App() {
     //@ts-ignore
     <Language.Provider value={{ language, setLanguage }}>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/nosotros" element={<Nosotros />} />
-        <Route path="/vision" element={<Vision />} />
-        <Route path="/lo-que-hacemos" element={<Servicios />} />
-        <Route path="/recursos" element={<Recursos />} />
-        <Route path="/lab" element={<Laboratorio />} />
-        <Route path="/contacto" element={<Contacto />} />
+        <Route index element={<Home />} />
+        <Route path="nosotros" element={<Nosotros />} />
+        <Route path="vision" element={<Vision />} />
+        <Route path="lo-que-hacemos" element={<Servicios />} />
+        <Route path="recursos" element={<Recursos />} />
+        <Route path="lab" element={<Laboratorio />} />
+        <Route path="contacto" element={<Contacto />} />
       </Routes>
     </Language.Provider>
   );
