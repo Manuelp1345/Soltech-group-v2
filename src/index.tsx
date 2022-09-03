@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="https://soltechgroupv2.netlify.app">
+    <BrowserRouter basename="/">
       <Routes>
         <Route path="/*" element={<App />} />
       </Routes>
