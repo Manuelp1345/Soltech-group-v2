@@ -55,7 +55,7 @@ const CustomMenu = () => {
         backgroundColor: "rgba(0,0,0,0.5)",
         padding: "0.5rem",
         position: "fixed",
-        width: "100%",
+        width: { xs: "100%", md: "100%" },
         zIndex: "999",
       }}
     >
@@ -92,6 +92,7 @@ const CustomMenu = () => {
         <Box
           sx={{
             position: "relative",
+            display: { xs: "none", md: "block" },
           }}
         >
           <Button
@@ -188,6 +189,7 @@ const CustomMenu = () => {
           </Collapse>
         </Box>
       </Box>
+
       <Box
         component="ul"
         sx={{
@@ -212,7 +214,106 @@ const CustomMenu = () => {
           {contenido.contat}
         </ButtonMenu>
       </Box>
-      <Box sx={{ display: { xs: "block", md: "none" } }}>
+      <Box sx={{ display: { xs: "flex", md: "none" } }}>
+        <Box
+          sx={{
+            position: "relative",
+            display: { xs: "block", md: "none" },
+          }}
+        >
+          <Button
+            onClick={() => handleClickBtn()}
+            sx={{
+              color: "white",
+              fontSize: "1rem",
+              fontWeight: "bold",
+              padding: "0.5rem",
+            }}
+          >
+            <Box
+              component="img"
+              src={`img/${language}.png`}
+              sx={{
+                width: language === "french" ? "3rem" : "2rem",
+              }}
+            />
+          </Button>
+          <Collapse
+            sx={{
+              position: "absolute",
+              backgroundColor: "rgba(0,0,0,0.3)",
+              top: 45,
+              left: 0,
+            }}
+            in={openLanguaje}
+            timeout="auto"
+            unmountOnExit
+          >
+            <List component="div" disablePadding>
+              <ListItemButton
+                sx={{
+                  px: 1.5,
+                  fontSize: "1rem",
+                  display: language === "french" ? "none" : "block",
+                }}
+              >
+                <Box
+                  onClick={() => {
+                    setLanguage("french");
+                    handleClickBtn();
+                    localStorage.setItem("language", "french");
+                  }}
+                  component="img"
+                  src={"img/french.png"}
+                  sx={{
+                    width: "2.5rem",
+                    height: 30,
+                  }}
+                />
+              </ListItemButton>
+              <ListItemButton
+                sx={{
+                  px: 2,
+                  fontSize: "1rem",
+                  display: language === "english" ? "none" : "block",
+                }}
+              >
+                <Box
+                  onClick={() => {
+                    setLanguage("english");
+                    handleClickBtn();
+                    localStorage.setItem("language", "english");
+                  }}
+                  component="img"
+                  src={"img/english.png"}
+                  sx={{
+                    width: "2rem",
+                  }}
+                />
+              </ListItemButton>
+              <ListItemButton
+                sx={{
+                  px: 2,
+                  fontSize: "1rem",
+                  display: language === "spanish" ? "none" : "block",
+                }}
+              >
+                <Box
+                  onClick={() => {
+                    setLanguage("spanish");
+                    localStorage.setItem("language", "spanish");
+                    handleClickBtn();
+                  }}
+                  component="img"
+                  src={"img/spanish.png"}
+                  sx={{
+                    width: "2rem",
+                  }}
+                />
+              </ListItemButton>
+            </List>
+          </Collapse>
+        </Box>
         <IconButton
           aria-label="more"
           id="long-button"

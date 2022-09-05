@@ -21,53 +21,37 @@ const ContainerCustom = ({ children, bg }) => {
     bgUrl = "url('img/CONTACTO ARREGLADA.jpg')";
   }
 
-  if (bg === "homes") {
-    return (
-      <Box sx={{ position: "relative" }}>
-        <Box
-          component="video"
-          src="img/BACKGROUND_PLEXUS_INVERBET.mp4"
-          autoPlay
-          loop
-          sx={{
-            position: "absolute",
-            width: "100%",
-            height: "100vh",
-            padding: "0",
-            margin: "0",
-            zIndex: "-1",
-            objectFit: "cover",
-          }}
-        >
-          <CustomMenu />
-          {children}
-        </Box>
-      </Box>
-    );
-  }
   if (bg === "home") {
     return (
       <>
         {" "}
         <Box
-          component="video"
-          src="img/BACKGROUND_PLEXUS_INVERBET.mp4"
-          autoPlay={true}
-          loop
-          muted
           sx={{
-            position: "absolute",
-            width: "100%",
-            height: "100vh",
-            padding: "0",
-            margin: "0",
-            zIndex: "-1",
-            objectFit: "cover",
+            width: "100wh",
+            overflow: "hidden",
           }}
-        />
+        >
+          <Box
+            component="video"
+            src="img/BACKGROUND_PLEXUS_INVERBET.mp4"
+            autoPlay={true}
+            loop
+            muted
+            sx={{
+              position: "absolute",
+              width: { xs: "100%", md: "100%" },
+              height: { xs: "100%", md: "100vh" },
+              padding: "0",
+              margin: "0",
+              zIndex: "-1",
+              objectFit: "cover",
+            }}
+          />
+        </Box>
         <Box
           sx={{
             height: "100%",
+            width: "100%",
             position: "absolute",
             zIndex: "10",
           }}

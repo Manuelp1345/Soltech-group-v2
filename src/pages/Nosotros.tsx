@@ -6,21 +6,23 @@ import data from "../data.json";
 import perfiles from "../perfiles.json";
 import { Language } from "../App";
 import { useContext } from "react";
+import CloseIcon from "@mui/icons-material/Close";
 
 const style = {
   position: "absolute" as "absolute",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "80%",
-  height: 500,
+  width: { xs: 550, md: "70%" },
+  height: { xs: "100%", md: 500 },
   bgcolor: "white",
   boxShadow: 24,
-  p: 4,
+  p: { sx: 2, md: 4 },
   display: "flex",
-  flexDirection: "row",
+  flexDirection: { xs: "column", md: "row" },
   justifyContent: "center",
   alignItems: "center",
+  overflow: "scroll",
 };
 
 const Nosotros = () => {
@@ -535,24 +537,53 @@ const Nosotros = () => {
           aria-describedby="modal-modal-description"
         >
           <Box sx={style}>
-            <Box component="img" src={imgUrl} sx={{ maxHeight: 250 }} />
+            <Box
+              component="img"
+              src={imgUrl}
+              sx={{
+                maxHeight: { xs: 150, md: 250 },
+                pt: { xs: 10, md: 0 },
+                mt: { xs: 10, md: 0 },
+              }}
+            />
             <Box
               sx={{
                 display: "flex",
-                flexDirection: "column",
+                flexDirection: { xs: "column", md: "column" },
+                flexWrap: "wrap",
                 justifyContent: "space-between",
                 alignItems: "center",
+                width: { xs: "100%", md: "auto" },
               }}
             >
               <Typography id="modal-modal-title" variant="h6" component="h2">
                 {text.nombre}
               </Typography>
-              <Typography id="modal-modal-title" variant="h6" component="h2">
-                {text.puesto}
+              <Typography
+                textAlign={"center"}
+                id="modal-modal-title"
+                variant="h6"
+                component="h2"
+                fontSize={18}
+              >
+                {text.puesto.split(",")[0]}
+                <br />
+                {text.puesto.split(",")[1]}
               </Typography>
-              <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+              <Typography
+                width={"50%"}
+                id="modal-modal-description"
+                sx={{ width: { xs: "50%", md: "100%" }, py: 2 }}
+              >
                 {text.descripcion}
               </Typography>
+              <Button
+                sx={{ display: { xs: "block", md: "none" } }}
+                onClick={handleClose}
+                variant="text"
+              >
+                <CloseIcon />
+              </Button>
             </Box>
           </Box>
         </Modal>

@@ -67,9 +67,9 @@ const Contacto = () => {
               marginBottom: "1.5rem",
             }}
           >
-            <span style={{}}>Mayfair Berkeley Square&nbsp;</span>
-            Berkeley Square Berkeley Square House, 2nd Floor Berkeley Square,
-            London, W1J6BD, GBR
+            <span style={{}}>Mayfair Berkeley Square,&nbsp;</span>
+            Berkeley Square House, 2nd Floor Berkeley Square, London, W1J6BD,
+            GBR
           </Typography>
           <Typography
             sx={{
